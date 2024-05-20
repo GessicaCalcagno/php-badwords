@@ -6,7 +6,7 @@ $word = $_GET["censor_word"];
 // Sostituisco la parola da censurare con ***
 // $censored_paragraph = str_replace($word, '***', $user);
 
-//str_ireplace — Versione insensibile alle miuscole/minuscole di str_replace()
+//La funzione str_ireplace — Versione insensibile alle miuscole/minuscole di str_replace()
 $censored_paragraph = str_ireplace($word, '***', $user);
 
 // Lunghezza del paragrafo censurato
