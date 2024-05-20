@@ -1,7 +1,13 @@
 <?php
 $user = $_GET["paragraph"];
-// $word = $_Get["censor_word"]
+$word = $_GET["censor_word"];
 
+
+// Sostituisco la parola da censurare con ***
+$censored_paragraph = str_replace($word, '***', $user);
+
+// Lunghezza del paragrafo censurato
+$censored_length = strlen($censored_paragraph);
 ?>
 
 
@@ -22,10 +28,21 @@ $user = $_GET["paragraph"];
         <p>
             <?php echo $user; ?>
         </p>
-
         <h6>La sua lunghezza</h6>
         <p>
-        <?php echo strlen($user); ?>
+            <?php echo strlen($user); ?>
+        </p>
+        <hr>
+    </section>
+
+    <section>
+        <h3>Stampo con ***</h3>
+        <p>
+            <?php echo  $censored_paragraph; ?>
+        </p>
+        <h6>La sua lunghezza</h6>
+        <p>
+            <?php echo $censored_length; ?>
         </p>
     </section>
 
