@@ -13,7 +13,8 @@
         <label for="paragraph">Paragrafo:</label><br>
         <textarea id="paragraph" name="paragraph" rows="10" cols="50" required></textarea><br><br>
 
-      
+        <!-- <label for="censor_word">Parola da censurare:</label><br>
+        <input type="text" id="censor_word" name="censor_word" required><br><br> -->
 
         <input type="submit" value="Invia">
     </form>

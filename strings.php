@@ -1,5 +1,6 @@
 <?php
 $user = $_GET["paragraph"];
+// $word = $_Get["censor_word"]
 
 ?>
 
@@ -20,6 +21,11 @@ $user = $_GET["paragraph"];
         <h3>Stampo il paragrafo</h3>
         <p>
             <?php echo $user; ?>
+        </p>
+
+        <h6>La sua lunghezza</h6>
+        <p>
+        <?php echo strlen($user); ?>
         </p>
     </section>
 
